@@ -1,4 +1,4 @@
-import { SettingsManager } from './settings-manager';
+import { SettingsManager } from './i-face-settings-manager';
 import { getBackupPath } from './back-up-path';
 import { expect } from 'chai';
 
@@ -7,8 +7,6 @@ describe('поведение back-up-path', () => {
     const result: SettingsManager = {
       name: 'test1',
       path: 'test2',
-      profileName: 'test3',
-      baseFolder: 'test4',      
     }
     return result;
    }

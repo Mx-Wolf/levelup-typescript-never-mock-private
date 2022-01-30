@@ -1,6 +1,8 @@
+import { SettingsManager } from "./i-face-settings-manager";
+
 const DEFAULT_PROFILE = 'default';
 
-export class SettingsManager {
+export class SettingsManagerImp implements SettingsManager {
   private profileName: string = DEFAULT_PROFILE;
   constructor(private readonly baseFolder: string) { }
   get name() { return this.profileName; }
