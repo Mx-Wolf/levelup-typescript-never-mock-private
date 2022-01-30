@@ -6,7 +6,9 @@ describe('поведение back-up-path', () => {
   const getMockSettingsManager = (): SettingsManager => { 
     const result: SettingsManager = {
       name: 'test1',
-      path: 'test2',      
+      path: 'test2',
+      profileName: 'test3',
+      baseFolder: 'test4',      
     }
     return result;
    }
